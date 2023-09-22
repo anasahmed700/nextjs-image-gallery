@@ -17,6 +17,8 @@ function NavBar() {
                 <Navbar.Collapse id="main-navbar">
                     <Nav>
                         <Nav.Link as={Link} href="/static" active={pathname === '/static'}>Static</Nav.Link>
+                        <Nav.Link as={Link} href="/dynamic" active={pathname === '/dynamic'}>Dynamic</Nav.Link>
+                        <Nav.Link as={Link} href="/isr" active={pathname === '/isr'}>ISR</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
