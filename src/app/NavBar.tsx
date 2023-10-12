@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Container, Nav, Navbar } from "react-bootstrap"
+import { Container, Nav, NavDropdown, Navbar } from "react-bootstrap"
 
 
 function NavBar() {
@@ -19,6 +19,11 @@ function NavBar() {
                         <Nav.Link as={Link} href="/static" active={pathname === '/static'}>Static</Nav.Link>
                         <Nav.Link as={Link} href="/dynamic" active={pathname === '/dynamic'}>Dynamic</Nav.Link>
                         <Nav.Link as={Link} href="/isr" active={pathname === '/isr'}>ISR</Nav.Link>
+                        <NavDropdown title="Topics" id="topics-dropdown">
+                            <NavDropdown.Item as={Link} href="/topics/health">Health</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/topics/islam">Islam</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} href="/topics/coding">Coding</NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
