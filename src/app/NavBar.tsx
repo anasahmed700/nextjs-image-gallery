@@ -24,6 +24,7 @@ function NavBar() {
                             <NavDropdown.Item as={Link} href="/topics/islam">Islam</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/topics/coding">Coding</NavDropdown.Item>
                         </NavDropdown>
+                        <Nav.Link as={Link} href="/search" active={pathname === '/search'}>Search</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
